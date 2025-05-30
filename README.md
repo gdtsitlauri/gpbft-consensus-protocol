@@ -23,3 +23,4 @@ This protocol was tested in the [SymBChainSim](https://github.com/GiorgDiama/Sym
 2. Run the protocol with:
    ```bash
    python3 GPBFT.py
+3. Simulation and verification can be done using SymBChainSim
