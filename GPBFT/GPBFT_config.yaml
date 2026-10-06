@@ -1,0 +1,20 @@
+# CONFIGURATION PARAMETERS FOR GPBFT
+# round timeout in seconds (same as PBFT)
+timeout: 10
+
+# nodes per group; 0 = ceil(sqrt(num_nodes))
+group_size: 0
+
+# managers per group: 2 = the dual administrators of GPBFT (a group keeps working if one crashes),
+# 1 = fewest messages
+managers_per_group: 2
+
+# rotate the managers of every group each round
+rotate_managers: True
+
+# seconds a manager waits for the rest of its group before sending a partial aggregate
+aggregation_window: 0.01
+
+# seconds to aggregate votes into a group signature, and to verify one
+sig_aggregate_delay: 0.002
+sig_verify_delay: 0.002
