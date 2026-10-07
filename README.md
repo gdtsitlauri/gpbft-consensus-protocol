@@ -107,6 +107,6 @@ although it declared `group_sign` and `trace` phases, nothing in it sent those m
 PBFT; its test notes drew conclusions from an always-empty list of group signatures. The current version
 implements the grouping, aggregation and certificates and measures them.
 
-## Author
+## Author and license
 
-George David Tsitlauri, University of Thessaly.
+George David Tsitlauri, University of Thessaly. MIT license ([LICENSE](LICENSE)).
