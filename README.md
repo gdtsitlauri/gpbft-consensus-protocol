@@ -45,7 +45,7 @@ the standard deviation over the seeds where it matters. All tables are in `resul
 3. **Latency grows with the extra hops.** Votes travel member, manager, other managers, members, so a round
    takes longer at scale: at 64 nodes, 1.38 s (GPBFT-2) and 1.76 s (GPBFT-1) against 1.24 s for PBFT. Up to
    16 nodes GPBFT-2 is as fast as PBFT or faster. A longer aggregation window trades messages for latency:
-   at 64 nodes, a 0.1 s window cuts GPBFT-2 to 1,639 messages per block at 1.62 s.
+   at 64 nodes, a 0.1 s window cuts GPBFT-2 to 1,639 messages per block at 1.61 s.
 4. **Under crashes, two managers per group are needed, and GPBFT-2 is the steadiest.** With 3 of 16 nodes
    crashing and recovering, GPBFT-1 confirms only 73 ± 19 blocks, because a crashed manager leaves its group
    without certificates. GPBFT-2 confirms 142 ± 10 blocks against 124 ± 59 for PBFT, with a latency of
