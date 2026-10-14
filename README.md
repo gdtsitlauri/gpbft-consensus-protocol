@@ -79,7 +79,6 @@ gpbft-consensus-protocol/
   install.py                adds GPBFT to a SymBChainSim checkout
   experiments/              run_experiments.py: all experiments (sizes, crashes, aggregation window)
   results/                  results.md (tables), results.csv (one row per run)
-  legacy/                   the first version and its documents
 ```
 
 ## Running
@@ -99,13 +98,6 @@ Reproducing all results (110 simulations, a few minutes with several cores):
 ```bash
 python experiments/run_experiments.py SymBChainSim --jobs 8
 ```
-
-## The first version
-
-`legacy/` holds the first version of this project. It was written for an older SymBChainSim API and,
-although it declared `group_sign` and `trace` phases, nothing in it sent those messages, so it behaved as
-PBFT; its test notes drew conclusions from an always-empty list of group signatures. The current version
-implements the grouping, aggregation and certificates and measures them.
 
 ## Author and license
 
