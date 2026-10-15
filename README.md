@@ -101,4 +101,4 @@ python experiments/run_experiments.py SymBChainSim --jobs 8
 
 ## Author and license
 
-George David Tsitlauri, Department of Informatics and Telecommunications, University of Thessaly, Lamia, Greece. MIT license ([LICENSE](LICENSE)).
+George David Tsitlauri, Department of Informatics and Telecommunications, University of Thessaly, Greece. MIT license ([LICENSE](LICENSE)).
